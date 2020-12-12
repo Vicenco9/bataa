@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio - Viktor Jovanović</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript,Materialize"/>
+        <meta name="description" content="Hey there ! Welcome to my portfolio website. Check out all my work and let's talk bussiness !"/>
+        <meta name="author" content="Viktor Jovanovic"/>
+        <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/business-and-education-1/512/261_resume_employee_hiring_hr_profile-256.png"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </head>
+    
+    
+    <body>
+        
+        <header id="zaglavlje">
+            
+            <div class="flex-container3">
+            <div id="logo">
+                <img src="img/logo.png" alt="logo"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#main">HOME</a></li>
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#my-projects">MY PROJECTS</a></li>
+                    <li><a href="#futer">CONTACT</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        
+
+        
+        <section id="main">
+            <div class="flex-container">
+                <div id="glavniTekst">
+                    <h1>VIKTOR <span>J</span><span>O</span><span>V</span><span>A</span><span>N</span><span>O</span><span>V</span><span>I</span><span>Ć</span></h1>
+                
+                
+                <div id="glavniTekst2media">
+                    <p>Front-End Developer and Web Designer based in Serbia</p>
+                </div>
+                </div>
+                
+                <div id="glavniTekst2">
+                    <p><span>Front-End</span> <span>Developer</span> <span>and Web Designer</span> <span>based in Serbia</span></p>
+                </div>
+        
+                <div id="glavniTekst3">
+                    <h1>PORTFOLIO</h1>
+                </div>
+            </div>
+            <ul id="menu-social">
+                <a href="https://www.instagram.com/viktorjovanovicc/" target="_blank"><li>INSTAGRAM</li></a> <span>/</span>
+                <a href="#"><li>MAIL</li></a><span>/</span>
+                <a href="https://www.facebook.com/viktorjovanovicc" target="_blank"><li>FACEBOOK</li></a>
+            </ul>
+        </section>
+        
+        <section id="aboutme">
+            <div class="flex-container2">
+                <div id="desni-blok">
+                    <div><h2>A lit<label>tle bit abo</label>ut me</h2>
+                    <p> I am Viktor Jovanović, Front-End Developer and Web Designer, born in Serbia, Belgrade. Right now I am the first year on ICT College. I am very interested in web design and open to any type of business proposal or partnership. If you want to contact me, I will be happy to answer.</p></div>
+                    <div id="slika0">
+                        <img src="img/ja.png" alt="Picture of me"/>
+                    </div>
+                </div>
+            </div>
+            <div id="my-skills">
+                 <h3>My Skills</h3>
+                    <p>HTML 5</p>
+                    <div class="container">
+                        <div class="skills html"><p>90%</p></div>
+                    </div>
+
+                    <p>CSS 3</p>
+                    <div class="container">
+                        <div class="skills css"><p>85%</p></div>
+                    </div>
+
+                    <p>JavaScript</p>
+                    <div class="container">
+                        <div class="skills js"><p>15%</p></div>
+                    </div>
+
+                    <p>Jquery</p>
+                    <div class="container">
+                    <div class="skills php"><p>10%</p></div>
+                    </div>
+            </div>
+        </section>
+        
+        <section id="my-projects">
+            <div class="flex-container4">
+                <div id="project-photo">
+                    <a href="#" target="_blank"><img src="img/project1.png" alt="project one"/></a>
+                </div>
+                <div id="project-text">
+                    <h3>Zdrava hrana</h3>
+                    <p>My school project</p>
+                    <p>Year: 2018 Belgrade</p>
+                </div>
+            </div>
+
+            <div class="flex-container4">
+                <div id="project-photo">
+                    <a href="#" target="_blank"><img src="img/fcBayern.png" alt="project one"/></a>
+                </div>
+                <div id="project-text">
+                    <h3>FC BAYERN</h3>
+                    <p>Bayern website</p>
+                    <p>Year: 2019 Belgrade</p>
+                </div>
+            </div>
+
+            <div class="flex-container4">
+                <div id="project-photo">
+                    <a href="#" target="_blank"><img src="img/bmw.png" alt="project one"/></a>
+                </div>
+                <div id="project-text">
+                    <h3>BMW</h3>
+                    <p>BMW website</p>
+                    <p>Year: 2017 Belgrade</p>
+                </div>
+            </div>
+
+            <div class="flex-container4">
+                <div id="project-photo">
+                    <a href="#" target="_blank"><img src="img/apple.png" alt="project one"/></a>
+                </div>
+                <div id="project-text">
+                    <h3>Apple</h3>
+                    <p>Apple website</p>
+                    <p>Year: 2018 Belgrade</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="futer">
+            <div id="say-hello">
+                <h2>SAY HELLO!</h2>
+                <p>I'm always interested about cool stuff. Are you minding a project? Let's talk.
+                </p>
+
+                <form action="index.html" method="GET">
+                    <label for="ime">Your full name</label>
+                    <input type="text" required="required" placeholder="Enter your full name ..." maxlength="30" id="ime" class="special"/>
+                    <label for="mail">Your e-mail</label>
+                    <input type="email" required="required" placeholder="Your e-mail here ..." id="mail" class="special"/>
+                    <label for="area">Message</label>
+                    <textarea name="area" id="area" cols="30" rows="10" placeholder="Enter your message here ..."></textarea>
+                    <input type="submit" id="dugme1" value="Send"/>
+                </form>
+
+                <div id="linkovi">
+                <a href="fajl.xml">XML</a></div>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,778 @@
+@font-face {
+    font-family:BebasNeueBold;
+    src:url('../fonts/BebasNeue Bold.ttf');
+}
+@font-face {
+    font-family:BebasNeueRegular;
+    src:url('../fonts/BebasNeue Regular.ttf');
+}
+@font-face {
+    font-family:Muli-Regular;
+    src:url('../fonts/Muli-Regular.ttf');
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #141414;
+  color: white;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4{
+   font-family: BebasNeueBold; 
+   font-weight: normal; 
+   font-style: normal; 
+}
+a{
+    font-family: "Muli-Regular";
+}
+p { 
+   font-family: BebasNeueRegular; 
+   font-weight: normal; 
+   font-style: normal; 
+}
+
+#zaglavlje{
+    width:100%;
+    min-height: 100px;
+}
+/*LOGO*/
+#logo{
+    position: relative;
+    top:40px;
+    left:40px;
+}
+#logo img{
+    width:120px;
+    height:120px;
+}
+
+#zaglavlje nav{
+    width:100%;
+    position: relative;
+    left:30px;
+    top:60px;
+}
+#zaglavlje nav li{
+    margin-left:30px;
+}
+#zaglavlje nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+#zaglavlje nav li a{
+	color:white;
+	text-decoration:none;
+	font-size:22px;
+	font-weight:bold;
+}
+#zaglavlje a:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition:0.2s ease;
+}
+
+
+.flex-container{
+    width: 100%;
+    margin: 0px auto;
+    min-height: 550px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+#main{
+    width:100%;
+    min-height: 700px;
+}
+#glavniTekst{
+    position: relative;
+    width: 50%;
+    left:80px;
+    width: 50%;
+}
+#glavniTekst h1{
+    font-size: 200px;
+    line-height: 80%;
+    letter-spacing: -2px;
+    margin-bottom: -15px;
+}
+
+h1 span{
+    display: table-cell;
+    margin:0;
+    padding:0;
+    animation:  animate 2s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7){
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(8){
+    animation-delay: 1.75s;
+}
+h1 span:nth-child(9){
+    animation-delay: 2s;
+}
+@keyframes animate{
+    0%
+    {
+        color:#111;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 30px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 50px #00b3ff,   
+                    0 0 60px #00b3ff,
+                    0 0 70px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 90px #00b3ff;
+    }
+    5%,95%
+    {
+        color:#fff;
+        filter: blur(0px);
+        text-shadow:none;
+    }
+}
+
+#glavniTekst2{
+    width: 30%;
+    transform: rotate(270deg);
+    position: relative;
+    left: 40px;
+    top:-20px;
+}
+#glavniTekst2 span{
+    display: block;
+}
+
+#glavniTekst2 p{
+    font-size: 50px;
+    color:white;
+    opacity: 0.3;
+    font-weight: bold;
+    letter-spacing: 3px; 
+}
+#glavniTekst2media p{
+  display: none;
+}
+
+#glavniTekst3{
+    width: 20%;
+    transform: rotate(270deg);
+    position: relative;
+    top:95px;
+}
+#glavniTekst3 h1{
+    font-size: 135px;
+    color: white;
+    opacity: 0.3;
+    letter-spacing: 10px;
+}
+
+#menu-social a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: BebasNeueRegular;
+}
+#menu-social li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+#menu-social{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 17px;
+    bottom: 40px;
+}
+#menu-social span{
+    font-size: 25px;
+    margin-left: 15px;
+    
+}
+
+#menu-social a:hover{
+    color:royalblue;
+	transition:all 0.5s ease-in;
+	padding:5px 0px;
+}
+
+/*ABOUT ME*/
+#aboutme{
+    width:100%;
+    min-height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container2{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-wrap:wrap;
+}
+.flex-container4{
+    width: 90%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    text-wrap:wrap;
+}
+.flex-container3{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    text-wrap:wrap;
+}
+.line{
+    text-decoration: line-through;
+}
+
+#desni-blok{
+    width:80%;
+    margin-right: 80px;
+    margin-left: 40px;
+    position: relative;
+    top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desni-blok h2{
+    font-size: 70px;
+    padding-bottom: 80px;
+}
+
+#desni-blok h2 label{
+    border-bottom: 4px solid white;
+    padding-bottom: 20px;
+}
+
+#desni-blok #slika0{
+    width: 100%;
+    border: 4px solid white;
+    position: relative;
+}
+
+#desni-blok #slika0 img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#desni-blok p{
+    font-size: 23px;
+    font-family: Muli-Regular;
+    padding-right: 100px;
+    text-align: justify;
+}
+#my-skills{
+    width:65%;
+    margin: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#my-skills p{
+    margin: 5px;
+}
+
+.container{
+    width: 70%;
+    background-color: #616161;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.skills{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    color:white;
+    background-color: #424242;
+}
+
+.html{
+    width: 90%;
+}
+.css{
+    width:85%;
+}
+
+.js{
+    width:15%;
+}
+.php{
+    width:10%;
+}
+#my-skills h3{
+    font-size:35px;
+}
+#my-skills p{
+    font-size: 23px;
+}
+#my-projects{
+    width:90%;
+    margin:40px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#my-projects .flex-container4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+#my-projects .flex-container4 #project-photo{
+    width: 100%;
+}
+
+#my-projects .flex-container4 #project-photo img{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    width: 100%;
+}
+#project-photo img:hover{
+    transform: scale(0.95);
+    margin-bottom: -20px;
+}
+
+#project-photo img:hover #project-text{
+    display: none;
+}
+
+#project-text{
+    width: 100%;
+}
+#project-text h3{
+    font-size: 35px;
+    text-align: center;
+}
+#project-text p{
+    font-size: 20px;
+    text-align: center;
+    color: #c2c2c2;
+}
+/*FOOTER*/
+#futer{
+    width: 100%;
+    min-height: 700px;
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+#say-hello{
+    width:100%;
+    margin:0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    position: relative;
+    top:80px;
+}
+#say-hello h2{
+    font-size: 100px;
+    text-align: center;
+}
+#say-hello p{
+    font-size: 23px;
+    opacity: 0.8;
+    text-align: center;
+    font-family: "Muli-Regular";
+    margin-top:-40px;
+    padding-bottom: 50px;
+}
+
+#say-hello form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+}
+
+#say-hello form label{
+    padding: 40px 0px;
+    font-size: 20px;
+}
+
+#say-hello form .special{
+    border: none;
+    background-color: #0c0c0c;
+    border-bottom: 5px solid white;
+    width: 20%;
+    padding: 10px 5px;
+    color: white;
+}
+
+#say-hello form #area{
+    width: 20%;
+    padding: 10px 15px;
+    border: none;
+    border: 5px solid white;
+    background-color: #0c0c0c;
+    color: white;
+}
+
+#say-hello form #dugme1{
+    width: 8%;
+    padding: 10px 0px;
+    background-color: #0c0c0c;
+    border: 5px solid white;
+    color: white;
+    margin: 50px 0px;
+}
+
+#say-hello #linkovi{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+
+#say-hello a{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Muli-Regular";
+    font-weight: bold;
+    margin-top: 20px;
+    color:#fff;
+    text-decoration: none;
+}
+/*MEDIA QUERIES*/
+@media (max-width:1200px){
+    #main #glavniTekst h1{
+        font-size: 150px;
+    }
+
+    #main #glavniTekst2 span:first-child{
+        padding-top: 150px;
+    }
+
+    #main #glavniTekst3 h1{
+        display: none;
+    }
+
+    #aboutme #desni-blok h2{
+        padding-bottom: 20px;
+    }
+
+    #aboutme #desni-blok p{
+        font-size: 18px;
+    }
+
+    #aboutme #desni-blok #slika0{
+        top: 50px;
+    }
+
+    #aboutme #my-skills{
+        width : 90%;
+    }
+
+    #futer #say-hello form .special{
+        width: 50%;
+    }
+
+    #futer #say-hello form #area{
+        width: 50%;
+    }
+
+    #futer #say-hello form #dugme1{
+        width: 15%;
+        padding: 15px 0px;
+    }
+
+    #futer #say-hello #linkovi{
+        width: 80%;
+    }
+}
+@media (max-width:992px){
+
+    #main #glavniTekst2 span:first-child{
+        padding-top: 300px;
+    }
+
+    #main #glavniTekst2 span{
+        font-size: 30px;
+        padding: 5px 0px;
+    }
+
+    #main #glavniTekst h1{
+        font-size: 130px;
+        margin-top: 150px;
+    }
+
+    #aboutme #desni-blok h2{
+        font-size: 50px;
+    }
+
+    #aboutme #desni-blok p{
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    #futer #say-hello h2{
+        font-size: 70px;
+    }
+
+    #futer #say-hello p{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+
+    .flex-container3 #logo{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+
+    .flex-container3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flex-container3 ul{
+        display: block;
+        margin: 0px auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #main{
+        width: 100%;
+    }
+    #zaglavlje nav ul li a{
+        font-size: 18px;
+    }
+    #zaglavlje nav ul li{
+        margin-left: 15px;
+    }
+    #main .flex-container #glavniTekst h1{
+        font-size: 120px;
+    }
+    #glavniTekst{
+        left:30px;
+        top:0px;
+    }
+    #glavniTekst2{
+        display: none;
+    }
+    #glavniTekst2media{
+        position: relative;
+        top:20px;
+        left: 10px;
+        width:400px;
+    }
+    #glavniTekst2media p{
+        font-size: 30px;
+        color:white;
+        opacity: 0.5;
+        letter-spacing: 3px; 
+        display: block;
+        font-weight:100;
+    }
+    
+    #glavniTekst3{
+        left:260px;
+        top:130px;
+    }
+    #menu-social{
+        left:-10px;
+    }
+    #levi-blok img{
+        left:-45px;
+        top:0px;
+    }
+    #aboutme .flex-container2 #desni-blok{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutme .flex-container2 #desni-blok div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #aboutme .flex-container2 #desni-blok div p{
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    
+    
+    #my-skills{
+        width:80%;
+    }
+    #project-photo img{
+        transform: none;
+        width:350px;
+    }
+    #project-photo img:hover{
+        transform: none;
+        margin-right: 0px;
+    }
+    
+    #project-text p{
+        margin: 0px auto;
+    }
+    
+   #my-projects .flex-container4{
+        width: 40%;
+        margin: 5% 0%;
+    }
+
+    #futer #say-hello form #dugme1{
+        width: 30%;
+    }
+
+    #futer #say-hello #linkovi{
+        width: 100%;
+    }
+
+    
+}
+@media(max-width:480px){
+   
+    #logo{
+        top:180px;
+        display: none;
+    }
+    #glavniTekst2media{
+        top:60px;
+        left:px;
+    }
+    #main .flex-container #glavniTekst{
+        left: 0;
+        margin-bottom: 5%;
+    }
+
+
+    #zaglavlje .flex-container3 nav{
+        position: fixed;
+        top: 0px;
+        left: -25px;
+        width: 110%;
+        background-color: #ccc;
+        z-index: ;
+    }
+
+    #zaglavlje .flex-container3 nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #zaglavlje .flex-container3 nav ul li{
+        margin: 10px 0px;
+    }
+
+    #zaglavlje .flex-container3 nav ul li a{
+        font-size: 15px;
+    }
+
+    #main .flex-container #glavniTekst h1{
+        font-size: 90px;
+    }
+
+    #main .flex-container #glavniTekst2media p{
+        font-size: 20px;
+    }
+
+    #main #glavniTekst2media p{
+        font-size: 5px;
+    }
+
+    #main #menu-social{
+        left: -50px;
+    }
+
+    #main #menu-social a{
+        font-size: 15px;
+    }
+
+    #aboutme .flex-container2 #desni-blok div h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #aboutme .flex-container2 #desni-blok div h2 label{
+        border-bottom: none;
+    }
+
+    #my-projects .flex-container4{
+        width: 80%;
+        margin: 50px 0px;
+    }
+
+    #futer #say-hello form .special{
+        width: 80%;
+    }
+
+    #futer #say-hello form #area{
+        width: 70%;
+    }
+
+    #futer #say-hello form #dugme1{
+        width: 50%;
+    }
+
+    #futer #say-hello #linkovi{
+        flex-direction: column;
+    }
+}
